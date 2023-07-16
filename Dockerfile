@@ -1,5 +1,8 @@
 FROM alpine
-MAINTAINER David Personette <dperson@gmail.com>
+LABEL org.opencontainers.image.authors="dperson-at-gmail-dot-com,jcejohnson-at-gmail-dot-com"
+LABEL description="Fork of dperson/samba to use current packages."
+
+MAINTAINER David Personette <
 
 # Install samba
 RUN apk --no-cache --no-progress upgrade && \
